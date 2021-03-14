@@ -6,7 +6,7 @@ import HomePage from "./components/home/HomePage";
 
 function App() {
   return (
-    <div className="mx-auto mt-16 container">
+    <div className="container px-4 mt-16 md:px-16">
       <Navigation loading={false} />
       <Switch>
         <Route path={"/"} exact={true} component={HomePage} />
