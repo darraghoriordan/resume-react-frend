@@ -8,7 +8,6 @@ export type AvoCalculatorResultProps = {
 const AvoCalculatorResult = ({
   avoCalculatorResults,
 }: AvoCalculatorResultProps) => {
-  console.log("loading results component", avoCalculatorResults);
   return (
     <div className="flex flex-col font-mono text-sm text-darkGreen space-y-4">
       <h2 className="mb-2 text-xl uppercase">Your order summary:</h2>

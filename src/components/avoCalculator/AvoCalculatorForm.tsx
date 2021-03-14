@@ -14,7 +14,6 @@ const AvoCalculatorForm = ({ onParameterChange }: AvoCalculatorFormProps) => {
   const mapAndCallback = (values: any) => {
     // This is a hack to quickly access the values on blur
     // this means we validate nothing
-    console.log("call back running");
     avoCalculatorParameters.housePrice = values.housePrice;
     avoCalculatorParameters.percentDepositRequired =
       values.percentDepositRequired;
@@ -29,9 +28,9 @@ const AvoCalculatorForm = ({ onParameterChange }: AvoCalculatorFormProps) => {
 
     avoCalculatorParameters.personalSavingsPerWeek.cost =
       values.personalSavingsPerWeek;
-    console.log("setting local params");
+
     setAvoParams(avoCalculatorParameters);
-    console.log("calling callback");
+
     onParameterChange(avoCalculatorParameters);
   };
 
@@ -54,7 +53,6 @@ const AvoCalculatorForm = ({ onParameterChange }: AvoCalculatorFormProps) => {
             avoCalculatorParameters.personalSavingsPerWeek.cost,
         }}
         onSubmit={(values) => {
-          console.log("on submit fired");
           mapAndCallback(values);
         }}
       >

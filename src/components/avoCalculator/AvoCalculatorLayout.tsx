@@ -21,9 +21,8 @@ const AvoCalculatorLayout = () => {
   );
 
   useEffect(() => {
-    console.log("param calc use effect called");
     const results = ac.calculateResult(calculatorParameters);
-    console.log("setting new results", results);
+
     setCalculatorResults(results);
   }, [calculatorParameters, setCalculatorResults, formSubmitted]);
 
@@ -33,10 +32,8 @@ const AvoCalculatorLayout = () => {
         <div className="m:w-1/2 sm:w-full">
           <AvoCalculatorForm
             onParameterChange={(values: AvoCalculatorParameters) => {
-              console.log("setting calc params", values);
               setCalculatorParameters(values);
               setFormSubmitted(formSubmitted + 1);
-              console.log(formSubmitted);
             }}
           />
         </div>

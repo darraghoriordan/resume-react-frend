@@ -75,7 +75,6 @@ export default class AvoCalculator {
   calculateResult(
     avoCalculatorParameters: AvoCalculatorParameters
   ): AvoCalculatorResults {
-    console.log("calculating", avoCalculatorParameters);
     const avoCalculatorResult = new AvoCalculatorResults();
     avoCalculatorResult.housePrice = avoCalculatorParameters.housePrice;
     avoCalculatorResult.deposit =
