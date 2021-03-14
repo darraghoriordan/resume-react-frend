@@ -7,7 +7,7 @@ export type HeaderProps = {
 };
 const Navigation = ({ loading }: HeaderProps) => {
   return (
-    <nav className="flex items-center justify-items-start space-x-5">
+    <nav className="flex items-center justify-items-start space-x-5 flex-wrap">
       <div>
         <a href="/" className="navbar-left ">
           <img

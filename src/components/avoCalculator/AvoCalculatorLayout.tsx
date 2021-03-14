@@ -28,7 +28,7 @@ const AvoCalculatorLayout = () => {
 
   return (
     <div>
-      <div className="flex flex-row justify-between my-12 items-top">
+      <div className="flex flex-row flex-wrap justify-between my-12 items-top md:flex-nowrap">
         <div className="m:w-1/2 sm:w-full">
           <AvoCalculatorForm
             onParameterChange={(values: AvoCalculatorParameters) => {

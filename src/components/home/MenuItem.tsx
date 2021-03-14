@@ -23,7 +23,7 @@ const MenuItem = ({
     itemPrice
   );
   return (
-    <div className="flex flex-col justify-between font-mono">
+    <div className="flex flex-col justify-between font-mono md:max-w-screen-sm">
       <div className="flex flex-row justify-between mb-2 text-darkGreen">
         <span className="uppercase">{itemName}</span>
         <span>{itemPrice.toFixed(1)}</span>

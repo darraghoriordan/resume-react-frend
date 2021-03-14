@@ -4,6 +4,7 @@
 
 :root {
   background-color: #e1ffed;
+  min-width:640px; 
 }
 
 /* .header-area__subtitle {

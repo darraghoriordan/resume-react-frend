@@ -18,22 +18,22 @@ const HomePage = () => {
   return (
     <div className="">
       <div className="flex flex-row items-center justify-between my-8">
-        <div className="flex-col w-1/2 space-y-4">
+        <div className="flex-col flex-wrap lg:w-1/2 space-y-4">
           <h1 className="text-5xl uppercase text-darkGreen">
             Smashed Avocado Time!
           </h1>
 
           <div className="flex items-center justify-evenly space-x-4">
-            <span className="font-mono text-base text-darkGreen">
+            <span className="md:w-1/3 font-mono text-base text-darkGreen">
               Today the New Zealand median house price has increased by
             </span>
 
-            <span className="w-2/3 font-mono text-6xl text-darkGreen">
+            <span className="md:w-2/3 font-mono text-3xl md:text-6xl text-darkGreen">
               {`$${housePriceIncreaseToNow.toFixed(3)}`}
             </span>
           </div>
         </div>
-        <div className="lg:pr-32 ">
+        <div className="flex-auto invisible pr-8 md:w-1/3 lg:pr-32 lg:visible">
           <img
             className="img-responsive center-block"
             src={"/images/fresh-made-data-211-x-211.png"}
@@ -45,7 +45,7 @@ const HomePage = () => {
         Today's menu:
       </h2>
       <SectionHorizontalRule />
-      <div className="mt-8 grid grid-cols-2 grid-rows-3 auto-rows-fr gap-x-8 gap-y-4">
+      <div className="mt-8 grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-4">
         <div className="">
           <MenuItem
             itemPrice={5}
