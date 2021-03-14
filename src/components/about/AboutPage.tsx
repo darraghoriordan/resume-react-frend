@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="my-8 flex flex-col space-y-12 font-mono text-lg">
-      <h1 className="text-darkGreen text-5xl uppercase">About</h1>
+    <div className="flex flex-col my-8 font-mono text-lg space-y-12">
+      <h1 className="text-5xl uppercase text-darkGreen">About</h1>
       <p>
         I was getting a bit frustrated with some of the commentary in the news
         papers about how people should simply give up lattes and netflix so they

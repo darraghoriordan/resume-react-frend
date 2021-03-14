@@ -10,12 +10,12 @@ const AvoCalculatorResult = ({
 }: AvoCalculatorResultProps) => {
   console.log("loading results component", avoCalculatorResults);
   return (
-    <div className="flex flex-col font-mono text-darkGreen text-sm space-y-4">
-      <h2 className="text-xl uppercase mb-2">Your order summary:</h2>
+    <div className="flex flex-col font-mono text-sm text-darkGreen space-y-4">
+      <h2 className="mb-2 text-xl uppercase">Your order summary:</h2>
 
-      <p className=" text-darkGreen font-mono">
+      <p className="font-mono text-darkGreen">
         looks like you need a deposit of{" "}
-        <span className="block text-5xl my-5">
+        <span className="block my-5 text-5xl">
           {avoCalculatorResults.deposit.toLocaleString("en-NZ", {
             style: "currency",
             currency: "NZD",
@@ -74,7 +74,7 @@ const AvoCalculatorResult = ({
           </>
         ) : undefined}
         you can save your deposit in{" "}
-        <span className="block text-5xl my-8">
+        <span className="block my-8 text-5xl">
           {avoCalculatorResults.yearsToDeposit.toFixed(2)} years
         </span>
       </p>

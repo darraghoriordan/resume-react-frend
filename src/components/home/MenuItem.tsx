@@ -24,14 +24,14 @@ const MenuItem = ({
   );
   return (
     <div className="flex flex-col justify-between font-mono">
-      <div className="flex flex-row justify-between text-darkGreen mb-2">
+      <div className="flex flex-row justify-between mb-2 text-darkGreen">
         <span className="uppercase">{itemName}</span>
         <span>{itemPrice.toFixed(1)}</span>
       </div>
-      <div className="text-lineGrey text-sm mb-2">
+      <div className="mb-2 text-sm text-lineGrey">
         <div>{itemDescription}</div>
       </div>
-      <div className="text-darkGreen mb-6 space-x-2">
+      <div className="mb-6 text-darkGreen space-x-2">
         <span className="text-darkGreen">that's</span>
         <span className="text-2xl">{itemNumberOfIncrease.toFixed(4)}</span>
         <span className="text-darkGreen">
@@ -40,7 +40,7 @@ const MenuItem = ({
       </div>
       {showDivider && (
         <div className="">
-          <hr className="border-1 border-lightLineGrey w-12" />
+          <hr className="w-12 border-1 border-lightLineGrey" />
         </div>
       )}
     </div>

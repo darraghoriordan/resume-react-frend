@@ -1,7 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import AvoCalculatorLayout from "../avoCalculator/AvoCalculatorLayout";
-import Navigation from "../common/Navigation";
 import useCurrentHouseIncrease from "./useCurrentHouseIncrease";
 import { SectionHorizontalRule } from "./SectionHorizontalRule";
 
@@ -10,8 +9,8 @@ const HomePage = () => {
 
   if (housePriceIncreaseToNow === 0) {
     return (
-      <div className="flex items-center justify-center content-center min-h-screen">
-        <div className="font-mono text-darkGreen">Counting the avos...</div>
+      <div className="flex items-center content-center justify-center min-h-screen">
+        <div className="font-mono text-darkGreen">Scooping the avos...</div>
       </div>
     );
   }
@@ -19,17 +18,17 @@ const HomePage = () => {
   return (
     <div className="">
       <div className="flex flex-row items-center justify-between my-8">
-        <div className="flex-col space-y-4 w-1/2">
-          <h1 className="text-darkGreen text-5xl uppercase">
+        <div className="flex-col w-1/2 space-y-4">
+          <h1 className="text-5xl uppercase text-darkGreen">
             Smashed Avocado Time!
           </h1>
 
           <div className="flex items-center justify-evenly space-x-4">
-            <span className="text-darkGreen font-mono text-base">
+            <span className="font-mono text-base text-darkGreen">
               Today the New Zealand median house price has increased by
             </span>
 
-            <span className="font-mono text-darkGreen text-6xl w-2/3 ">
+            <span className="w-2/3 font-mono text-6xl text-darkGreen">
               {`$${housePriceIncreaseToNow.toFixed(3)}`}
             </span>
           </div>
@@ -42,11 +41,11 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <h2 className="text-xl text-darkGreen uppercase font-mono mb-2">
+      <h2 className="mb-2 font-mono text-xl uppercase text-darkGreen">
         Today's menu:
       </h2>
       <SectionHorizontalRule />
-      <div className="grid grid-cols-2 grid-rows-3 auto-rows-fr gap-x-8 gap-y-4 mt-8">
+      <div className="mt-8 grid grid-cols-2 grid-rows-3 auto-rows-fr gap-x-8 gap-y-4">
         <div className="">
           <MenuItem
             itemPrice={5}
@@ -120,7 +119,7 @@ const HomePage = () => {
       </div>
       <SectionHorizontalRule />
       <AvoCalculatorLayout />
-      <p className="text-sm font-mono text-darkGreen text-center mb-4">
+      <p className="mb-4 font-mono text-sm text-center text-darkGreen">
         by{" "}
         <a className="underline" href="https://www.darraghoriordan.com">
           https://www.darraghoriordan.com
