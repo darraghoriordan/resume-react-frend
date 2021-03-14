@@ -18,22 +18,22 @@ const HomePage = () => {
   return (
     <div className="">
       <div className="flex flex-row items-center justify-between my-8">
-        <div className="flex-col flex-wrap lg:w-1/2 space-y-4">
+        <div className="flex-col lg:w-1/2 space-y-4">
           <h1 className="text-5xl uppercase text-darkGreen">
             Smashed Avocado Time!
           </h1>
 
           <div className="flex items-center justify-evenly space-x-4">
-            <span className="md:w-1/3 font-mono text-base text-darkGreen">
+            <span className="font-mono text-base md:w-1/3 text-darkGreen">
               Today the New Zealand median house price has increased by
             </span>
 
-            <span className="md:w-2/3 font-mono text-3xl md:text-6xl text-darkGreen">
+            <span className="font-mono text-3xl md:w-2/3 md:text-6xl text-darkGreen">
               {`$${housePriceIncreaseToNow.toFixed(3)}`}
             </span>
           </div>
         </div>
-        <div className="flex-auto invisible pr-8 md:w-1/3 lg:pr-32 lg:visible">
+        <div className="invisible pr-8  lg:pr-20 lg:visible">
           <img
             className="img-responsive center-block"
             src={"/images/fresh-made-data-211-x-211.png"}

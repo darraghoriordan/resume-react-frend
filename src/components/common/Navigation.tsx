@@ -7,7 +7,7 @@ export type HeaderProps = {
 };
 const Navigation = ({ loading }: HeaderProps) => {
   return (
-    <nav className="flex items-center justify-items-start space-x-5 flex-wrap">
+    <nav className="flex items-center justify-items-start sm:space-x-5 flex-wrap">
       <div>
         <a href="/" className="navbar-left ">
           <img
@@ -17,7 +17,7 @@ const Navigation = ({ loading }: HeaderProps) => {
           />
         </a>
       </div>
-      <div className="font-mono text-darkGreen divide-x">
+      <div className="font-mono flex-nowrap text-darkGreen divide-x">
         <NavLink to="/" className="px-5">
           calculate your order
         </NavLink>
